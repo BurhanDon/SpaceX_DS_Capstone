@@ -53,7 +53,7 @@ if section == "1. Project Overview":
     st.markdown("### Executive Summary")
     st.write("""
     The commercial space industry has been revolutionized by SpaceX's ability to reuse the first stage of the Falcon 9 rocket. 
-    A standard Falcon 9 launch costs approximately **$62 million**, significantly less than the **$165 million** average of traditional competitors. 
+    A standard Falcon 9 launch costs approximately $62 million, significantly less than the $165 million average of traditional competitors. 
     This price advantage is largely derived from the successful recovery and refurbishment of the first-stage boosters.
     
     This project focuses on developing a machine learning pipeline to predict the landing outcome of the Falcon 9 first stage. 
@@ -772,4 +772,5 @@ print("Accuracy :", logreg_cv.best_score_)
         else:
             st.error(f"## CRASH LANDING PREDICTED")
             st.metric(label="Confidence Level", value=f"{1-prob:.1%}")
+
             st.write(f"The model predicts a failure with **{1-prob:.1%}** confidence. Re-evaluate mission parameters.")

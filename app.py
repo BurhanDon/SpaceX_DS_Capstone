@@ -133,10 +133,11 @@ if section == "1. Project Overview":
     # --- CERTIFICATION ---
     st.divider()
     st.info("""
-    **Certification Context:**
-    This capstone project was developed as the final requirement for the **IBM Data Science Professional Certificate** on Coursera. 
-    It synthesizes all core competencies of the curriculum, including Python programming, SQL database management, data visualization, and machine learning application.
-    """)
+    **Project Context & Personal Journey:**
+    This capstone project stands as a testament to my individual dedication and rigorous self-study. 
+    While the IBM Data Science Professional Certificate provided the conceptual framework, the execution represents countless hours of independent coding, debugging, and analytical reasoning. 
+    
+    I developed every stage of this pipeline—from the complexity of web scraping to the precision of machine learning tuning—to not only demonstrate my current proficiency in Python and SQL but also to showcase my relentless drive to explore, learn, and master the depths of the Data Science domain.""")
     
 # --- SECTION 2: WEB SCRAPING ---
 elif section == "2. Data Collection (Scraping)":
@@ -774,3 +775,4 @@ print("Accuracy :", logreg_cv.best_score_)
             st.metric(label="Confidence Level", value=f"{1-prob:.1%}")
 
             st.write(f"The model predicts a failure with **{1-prob:.1%}** confidence. Re-evaluate mission parameters.")
+
